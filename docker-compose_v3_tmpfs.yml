@@ -4,7 +4,7 @@ services:
  web:
   image: nginx:alpine
   environment:
-   - TZ=Europe/Minsk
+   - TZ=Europe/Budapest
   ports:
    - 80:80
    - 443:443
