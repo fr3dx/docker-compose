@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+ httpd_web:
+  image: httpd
+  container_name: httpd_web
+  ports:
+  - 10082:80
+  environment:
+  - COURSE=compose
+  - MAINTAINER=fmolnar
+  restart: on-failure
